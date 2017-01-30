@@ -1,0 +1,12 @@
+@import 'base';
+
+header {
+	max-width: $content-width;
+	margin: 0 auto;
+	color: $font-color;
+	background-color: $background-color;
+	display: flex;
+	h1 {
+		font-size: $header-size;
+	}
+}
