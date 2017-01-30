@@ -1,0 +1,89 @@
+---
+:servers:
+  go:
+    'Freewheelers_Web_App :: build':
+      :activity: :sleeping
+      :last_build_status: :success
+      :last_build_time: 1485350019
+      :url: http://go.twu53team2.freewheelers.bike/go/pipelines/Freewheelers_Web_App/10/build/1
+      :last_label: '10'
+    'Freewheelers_Web_App :: build :: build':
+      :activity: :sleeping
+      :last_build_status: :success
+      :last_build_time: 1485350019
+      :url: http://go.twu53team2.freewheelers.bike/go/tab/build/detail/Freewheelers_Web_App/10/build/1/build
+      :last_label: '10'
+    'Freewheelers_Web_App :: integration':
+      :activity: :sleeping
+      :last_build_status: :success
+      :last_build_time: 1485350055
+      :url: http://go.twu53team2.freewheelers.bike/go/pipelines/Freewheelers_Web_App/10/integration/1
+      :last_label: '10'
+    'Freewheelers_Web_App :: integration :: run':
+      :activity: :sleeping
+      :last_build_status: :success
+      :last_build_time: 1485350055
+      :url: http://go.twu53team2.freewheelers.bike/go/tab/build/detail/Freewheelers_Web_App/10/integration/1/run
+      :last_label: '10'
+    'Freewheelers_Web_App :: package':
+      :activity: :sleeping
+      :last_build_status: :success
+      :last_build_time: 1485350085
+      :url: http://go.twu53team2.freewheelers.bike/go/pipelines/Freewheelers_Web_App/10/package/1
+      :last_label: '10'
+    'Freewheelers_Web_App :: package :: package':
+      :activity: :sleeping
+      :last_build_status: :success
+      :last_build_time: 1485350085
+      :url: http://go.twu53team2.freewheelers.bike/go/tab/build/detail/Freewheelers_Web_App/10/package/1/package
+      :last_label: '10'
+    'Freewheelers_Web_App :: deploy-to-ci':
+      :activity: :sleeping
+      :last_build_status: :success
+      :last_build_time: 1485350110
+      :url: http://go.twu53team2.freewheelers.bike/go/pipelines/Freewheelers_Web_App/10/deploy-to-ci/1
+      :last_label: '10'
+    'Freewheelers_Web_App :: deploy-to-ci :: deploy-to-ci':
+      :activity: :sleeping
+      :last_build_status: :success
+      :last_build_time: 1485350110
+      :url: http://go.twu53team2.freewheelers.bike/go/tab/build/detail/Freewheelers_Web_App/10/deploy-to-ci/1/deploy-to-ci
+      :last_label: '10'
+    'Freewheelers_Web_App :: deploy-to-qa':
+      :activity: :sleeping
+      :last_build_status: :success
+      :last_build_time: 1485752744
+      :url: http://go.twu53team2.freewheelers.bike/go/pipelines/Freewheelers_Web_App/10/deploy-to-qa/2
+      :last_label: '10 :: 2'
+    'Freewheelers_Web_App :: deploy-to-qa :: deploy-to-qa':
+      :activity: :sleeping
+      :last_build_status: :success
+      :last_build_time: 1485752744
+      :url: http://go.twu53team2.freewheelers.bike/go/tab/build/detail/Freewheelers_Web_App/10/deploy-to-qa/2/deploy-to-qa
+      :last_label: '10 :: 2'
+    'Freewheelers_Web_App :: deploy-to-staging':
+      :activity: :sleeping
+      :last_build_status: :success
+      :last_build_time: 1485784689
+      :url: http://go.twu53team2.freewheelers.bike/go/pipelines/Freewheelers_Web_App/10/deploy-to-staging/3
+      :last_label: '10 :: 3'
+    'Freewheelers_Web_App :: deploy-to-staging :: deploy-to-staging':
+      :activity: :sleeping
+      :last_build_status: :success
+      :last_build_time: 1485784689
+      :url: http://go.twu53team2.freewheelers.bike/go/tab/build/detail/Freewheelers_Web_App/10/deploy-to-staging/3/deploy-to-staging
+      :last_label: '10 :: 3'
+    'Freewheelers_Web_App :: deploy-to-prod':
+      :activity: :sleeping
+      :last_build_status: :success
+      :last_build_time: 1484813013
+      :url: http://go.twu53team2.freewheelers.bike/go/pipelines/Freewheelers_Web_App/2/deploy-to-prod/1
+      :last_label: '2'
+    'Freewheelers_Web_App :: deploy-to-prod :: deploy-to-prod':
+      :activity: :sleeping
+      :last_build_status: :success
+      :last_build_time: 1484813013
+      :url: http://go.twu53team2.freewheelers.bike/go/tab/build/detail/Freewheelers_Web_App/2/deploy-to-prod/1/deploy-to-prod
+      :last_label: '2'
+:repos: {}
+:sites: {}

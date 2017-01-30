@@ -1,6 +1,7 @@
 module Common
-	PATH = "/Users/jolsen/Documents/TWU/Buildmonitor/"
-	DATA_DIR = "./data/"
+	PATH = File.expand_path("../../", __FILE__)
+	DATA_DIR = PATH + "/../data/"
+
 	PIPELINEMAPS = {
 	  "Freewheelers" => {
 	    "Freewheelers_Web_App :: build" => "Build",

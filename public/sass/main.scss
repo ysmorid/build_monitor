@@ -10,3 +10,179 @@ header {
 		font-size: $header-size;
 	}
 }
+
+body {
+  background: black;
+  color: black;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center; 
+}
+
+.container {
+  margin: 9em auto; 
+}
+  
+.light {
+  display: inline-block;
+  margin: 10px; 
+}
+
+.light .border {
+  background: -webkit-linear-gradient(top, #919191, #464646 100%);
+  padding: 10px;
+  display: table; 
+  border-radius: 10px;
+}
+
+.light .border .base {
+  display: table-cell;
+  vertical-align: middle;
+  background: -webkit-linear-gradient(top, #65ba00, #00550b 100%);
+  height: 150px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 0 32px 2px black inset, 0 0 1px 1px rgba(255, 255, 255, 0.5); 
+}
+
+.light.failed .border .base {
+  background-image: url(fire.gif) 100% 100%;
+  background-repeat: repeat-x;
+  background-size: 100%;
+}
+
+.light .border .base .center {
+  position: relative;
+  border-radius: 133.33333px; 
+}
+
+.light .border .base .center h1 {
+  position: relative;
+  font-weight: bold;
+  z-index: 100;
+  /*font-size: 80px;*/
+  font-size: 50px;
+  letter-spacing: -3.33333px;
+  text-shadow: 0 0 57.14286px white, 0 0 57.14286px white, 0 0 57.14286px white, 0 0 57.14286px #8aff00, 0 0 57.14286px #8aff00, 0 0 57.14286px #8aff00, 0 0 20px white, 0 0 20px white, 0 0 20px white; 
+}
+
+.light .border .base .center h2 {
+  z-index: 100;
+  font-size: 1.5em;
+  text-shadow: 0 0 57.14286px white, 0 0 57.14286px white, 0 0 57.14286px white, 0 0 57.14286px #8aff00, 0 0 57.14286px #8aff00, 0 0 57.14286px #8aff00, 0 0 20px white, 0 0 20px white, 0 0 20px white; 
+}
+
+.light .border .base .center .textshadow {
+  position: absolute;
+  bottom: -40px;
+  left: 166.66667px;
+  width: 33.33333px;
+  height: 33.33333px;
+  border-radius: 33.33333px;
+  background: white;
+  box-shadow: 0 -13.33333px 80px 57.14286px white, 0 13.33333px 133.33333px 114.28571px #8aff00; 
+}
+
+.light.failed .border .base .center h1 {
+  text-shadow: 0 0 57.14286px white, 0 0 57.14286px white, 0 0 57.14286px white, 0 0 57.14286px #ff8168, 0 0 57.14286px #ff8168, 0 0 57.14286px #ff8168, 0 0 20px white, 0 0 20px white, 0 0 20px white; 
+}
+
+.light.failed .border .base .center h2 {
+  text-shadow: 0 0 57.14286px white, 0 0 57.14286px white, 0 0 57.14286px white, 0 0 57.14286px #ff8168, 0 0 57.14286px #ff8168, 0 0 57.14286px #ff8168, 0 0 20px white, 0 0 20px white, 0 0 20px white; 
+}
+
+.light.failed .border .base .center .textshadow {
+  box-shadow: 0 -13.33333px 80px 57.14286px white, 0 13.33333px 133.33333px 114.28571px #ff8168;
+  box-shadow: none;
+  -webkit-animation: spin .6s infinite linear;
+  bottom: 0;
+  background: #ff8168;
+}
+
+.light.failed .border .base .center .textshadow-broken {
+  position: absolute;
+  bottom: 0;
+  left: 166.66667px;
+  width: 33.33333px;
+  height: 33.33333px;
+  border-radius: 33.33333px;
+  background: #ff8168;
+}
+
+.light .border .base {
+  display: table-cell;
+  vertical-align: middle;
+  background: -webkit-linear-gradient(top, #65ba00, #00550b 100%);
+  height: 150px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 0 32px 2px black inset, 0 0 1px 1px rgba(255, 255, 255, 0.5); 
+}
+
+.light.failed .border .base {
+  background: url(fire.gif) 100% 100%;
+  background-repeat: repeat-x;
+  background-size: 100%;
+}
+
+.light .border.building {
+  background: -webkit-linear-gradient(top, $build-color-top, $build-color-bottom, 100%);
+  padding: 10px;
+  display: table; 
+  border-radius: 10px;
+}
+      
+.light .border.building .base .center {
+  position: relative;
+  border-radius: 133.33333px; 
+}
+
+.light .border.building .base .center h1 {
+  position: relative;
+  font-weight: bold;
+  z-index: 100;
+  font-size: 50px;
+  letter-spacing: -3.33333px;
+  text-shadow: 0 0 57.14286px white, 0 0 57.14286px white, 0 0 57.14286px white, 0 0 57.14286px #8aff00, 0 0 57.14286px #8aff00, 0 0 57.14286px #8aff00, 0 0 20px white, 0 0 20px white, 0 0 20px white; 
+}
+
+.light .border.building .base .center h2 {
+  font-weight: bold;
+  z-index: 100;
+  font-size: 1.5em;
+  text-shadow: 0 0 57.14286px white, 0 0 57.14286px white, 0 0 57.14286px white, 0 0 57.14286px #8aff00, 0 0 57.14286px #8aff00, 0 0 57.14286px #8aff00, 0 0 20px white, 0 0 20px white, 0 0 20px white; 
+}
+
+.light .border.building .base .center .textshadow {
+  position: absolute;
+  bottom: -40px;
+  left: 166.66667px;
+  width: 33.33333px;
+  height: 33.33333px;
+  border-radius: 33.33333px;
+  background: white;
+  box-shadow: 0 -13.33333px 80px 57.14286px white, 0 13.33333px 133.33333px 114.28571px #8aff00; 
+}
+
+.light.failed .border.building .base .center h1 {
+  text-shadow: 0 0 57.14286px white, 0 0 57.14286px white, 0 0 57.14286px white, 0 0 57.14286px #ff8168, 0 0 57.14286px #ff8168, 0 0 57.14286px #ff8168, 0 0 20px white, 0 0 20px white, 0 0 20px white;
+}
+
+.light.failed .border.building .base .center .textshadow {
+  box-shadow: 0 -13.33333px 80px 57.14286px white, 0 13.33333px 133.33333px 114.28571px #ff8168;
+  box-shadow: none;
+  -webkit-animation: spin .6s infinite linear;
+  bottom: 0;
+  background: #ff8168;
+}
+
+.light.failed .border.building .base .center .textshadow-broken {
+  position: absolute;
+  bottom: 0;
+  left: 166.66667px;
+  width: 33.33333px;
+  height: 33.33333px;
+  border-radius: 33.33333px;
+  background: #ff8168;
+}

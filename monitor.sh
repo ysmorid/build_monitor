@@ -1,3 +1,3 @@
-for filename in ruby/*.chicanery; do
+for filename in public/ruby/*.rb; do
 	chicanery $filename
 done

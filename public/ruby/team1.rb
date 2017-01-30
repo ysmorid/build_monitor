@@ -10,6 +10,9 @@ cctray 'go',
 
 persist_state_to 'state'
 
+
+puts Common::DATA_DIR + "A1.json"
+puts Common::PATH
 when_run do |state|
   PIPELINEMAPS.each do |name, map|
     pipelines = collapse_jobs_to_pipelines state[:servers]["go"], map
