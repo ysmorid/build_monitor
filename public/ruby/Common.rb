@@ -1,6 +1,7 @@
 module Common
 	PATH = File.expand_path("../../", __FILE__)
 	DATA_DIR = PATH + "/../data/"
+	RUBY_DIR = PATH + "/../ruby/"
 
 	PIPELINEMAPS = {
 	  "Freewheelers" => {
@@ -47,4 +48,15 @@ module Common
 
 		builds
     end
+
+    def get_json path
+    	file = File.read(path)
+  		JSON.parse(file) 
+  	end
+
+  	def save_file path, data
+	    File.open(path, "w+") {
+	    	|f| f.puts data 
+	    }
+  	end
 end

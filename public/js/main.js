@@ -8,14 +8,9 @@ $(function() {
     }
 
     $(selector + " h1").text(build.name);
-    $(selector + " h2").text(build.label);
-    if (build.activity == "building") {
-      $(selector).children('div').addClass("building");
-      $(selector).children('div').removeClass("sleeping");
-    } else {
-      $(selector).children('div').addClass("sleeping");
-      $(selector).children('div').removeClass("building");
-    }
+    $(selector + " h2").text(build.label ? build.label : "");
+
+    $(selector).children('div')[0].className = ('border ' + build.activity);
 
     if (build.status == "success") {
       $(selector).addClass("passed");
@@ -26,10 +21,9 @@ $(function() {
     }
 
     $(selector).click(function () {
+        window.location.reload();
         location.href = build.url;
-        console.out(location.href);
     });
-
 
     $(selector).show();
   };
@@ -51,8 +45,43 @@ $(function() {
         updateStatus('#build9', data[8]);
       },
     });
-    setTimeout(retrieveStatus, 2000);
+    setTimeout(retrieveStatus, 5000);
   }
 
   retrieveStatus();
 })
+
+function create_stages(num_stages) {
+    var html = '';
+    
+    for (stage = 1; stage <= num_stages; stage++) {
+      html += '<div id="build' + stage + '" class="light passed" style="display: none">';
+      html += '<div>';
+      html += '<h2 id="label">label</h2>';
+      html += '<div class="base">';
+      html += '<div class="center">';
+      html += '<h1></h1>';
+      html += '</div>';
+      html += '</div>';
+      html += '</div>';
+      html += '</div>';
+    }
+    
+    return html;
+}
+        
+window.onload = run();
+
+function insertHTML(id, html) {
+    var el = document.getElementById(id);
+    
+    if(!el) {
+        alert('Element with id ' + id + ' not found.');
+    }
+    
+    el.innerHTML = html;
+}
+
+function run() {
+    insertHTML('stages', create_stages(9));
+}
