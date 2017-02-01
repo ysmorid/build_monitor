@@ -1,5 +1,0 @@
-README
-start up a python simple server in a terminal
-
-python -m SimpleHTTPServer
-
