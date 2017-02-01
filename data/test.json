@@ -1,6 +1,6 @@
 [
-	{"name":"Passed","status":"success","activity":"building"},
+	{"name":"Passed","status":"success","activity":"sleeping"},
 	{"name":"Failed","status":"failed","activity":"sleeping"},
 	{"name":"Building","status":"success","activity":"building"},
-	{"name":"Building/Failures","status":"failed","activity":"building"}
+	{"name":"Building Failures","status":"failed","activity":"building"}
 ]
