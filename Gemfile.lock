@@ -1,0 +1,24 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    chicanery (0.1.8)
+      colorize (~> 0)
+      nokogiri (~> 1)
+    colorize (0.8.1)
+    json (2.0.3)
+    mini_portile2 (2.1.0)
+    nokogiri (1.7.0.1)
+      mini_portile2 (~> 2.1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  chicanery
+  json
+
+RUBY VERSION
+   ruby 2.3.0p0
+
+BUNDLED WITH
+   1.14.3
