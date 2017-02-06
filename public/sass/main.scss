@@ -1,5 +1,5 @@
 $background-color: black;
-$text-color: black;
+$text-color: white;
 
 $building-top: #ffcc00;
 $building-bottom: #bf6600;
@@ -13,8 +13,16 @@ $light-failing-bottom: #a00000;
 $sleeping-top: #f5f5f5;
 $sleeping-bottom: #6b6b6b;
 
+$stroke: 1.5px;
+$negStroke: -1.5px;
+$stroke-color: black;
+
 @mixin gradient ($color-one, $color-two) {
 	background: -webkit-linear-gradient(top, $color-one, $color-two 100%);
+}
+
+@mixin rainbow {
+	background: -webkit-linear-gradient(right, red, orange, yellow, green, blue, indigo, violet 100%);
 }
 
 body {
@@ -36,7 +44,12 @@ body {
     height: 100%;
     overflow: hidden;
   }
+}
 
+.title {
+	color: white; 
+	font-size: 500%; 
+	margin: 0 auto;
 }
 
 .container {
@@ -55,8 +68,7 @@ body {
 			@include gradient($light-passing-top, $light-passing-bottom);
 	  		display: table-cell;
 			vertical-align: middle;
-			height: 150px;
-			width: 400px;
+			width: 350px;
 			text-align: center;
 			position: relative;
 			box-shadow: 0 0 32px 2px black inset, 0 0 1px 1px rgba(255, 255, 255, 0.5); 
@@ -67,7 +79,8 @@ body {
 					position: relative;
 					font-weight: bold;
 					z-index: 100;
-					font-size: 3em;
+					font-size: 4em;
+					margin: 0;
 					color: white;
 					letter-spacing: -3.33333px;
 					//text-shadow: 0 0 57.14286px white, 0 0 57.14286px white, 0 0 57.14286px white, 0 0 57.14286px white, 0 0 57.14286px white, 0 0 57.14286px white, 0 0 20px white, 0 0 20px white, 0 0 20px white; 
@@ -91,26 +104,61 @@ body {
   		@extend .border;
 		@include gradient($building-top, $building-bottom);
 	}
+	
 }
 
 .light.failed {
 	@extend .light;
 	.border {
 		.base {
-			@include gradient($light-failing-top, $light-failing-bottom);
+			// @include gradient($light-failing-top, $light-failing-bottom);
 			.center {
 				h1 {
-					color: black;
+					color: $text-color;
 				}
 			}
-			// background: url(fire.gif) 100% 100%;
-			// background-repeat: repeat-x;
-			// background-size: 100%;
+			background: url(fire.gif) 100% 100%;
+			background-repeat: repeat-x;
+			background-size: 100%;
+		}
+	}
+}
+
+.light.error {
+	@extend .light;
+	.border {
+		@include rainbow
+		.base {
+			@include gradient(white, white);
+			background: white url(nyan_cat_thin.gif) 0 50%;
+			background-repeat: no-repeat;
+			background-size: 100%;
+
+			.center {
+				h1 {
+					text-shadow: $stroke $stroke $stroke-color,
+					$negStroke $stroke $stroke-color,
+					$stroke $negStroke $stroke-color,
+					$negStroke $negStroke $stroke-color;
+					color: white;
+				}
+			}
+			
 		}
 	}
 }
 
 h2 {
+	color: black;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	z-index: 100;
+	font-size: 2.5em;
+}
+	
+
+h3 {
+	color: $text-color;
 	margin: 0;
 	margin-top: 0px;
 	z-index: 100;

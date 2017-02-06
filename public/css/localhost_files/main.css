@@ -16,11 +16,6 @@ body {
       height: 100%;
       overflow: hidden; } }
 
-.title {
-  color: white;
-  font-size: 500%;
-  margin: 0 auto; }
-
 .container {
   margin: 0em auto; }
 
@@ -47,7 +42,6 @@ body {
           font-weight: bold;
           z-index: 100;
           font-size: 4em;
-          margin: 0;
           color: white;
           letter-spacing: -3.33333px; }
         .light .border .base .center .textshadow {
@@ -63,27 +57,21 @@ body {
     background: -webkit-linear-gradient(top, #ffcc00, #bf6600 100%); }
 
 .failed.light .border .base {
-  background: url(fire.gif) 100% 100%;
-  background-repeat: repeat-x;
-  background-size: 100%; }
+  background: -webkit-linear-gradient(top, #ff0000, #a00000 100%); }
   .failed.light .border .base .center h1 {
     color: white; }
 
-.error.light .border {
-  background: -webkit-linear-gradient(right, red, orange, yellow, green, blue, indigo, violet 100%); }
-  .error.light .border .base {
-    background: -webkit-linear-gradient(top, white, white 100%);
-    background: white url(nyan_cat_thin.gif) 0 50%;
-    background-repeat: no-repeat;
-    background-size: 100%; }
-    .error.light .border .base .center h1 {
-      text-shadow: 1.5px 1.5px black, -1.5px 1.5px black, 1.5px -1.5px black, -1.5px -1.5px black;
-      color: white; }
+.error.light .border .base {
+  background: url(nyan.gif) 0 100%;
+  background-repeat: repeat-x;
+  background-size: 100%; }
+  .error.light .border .base .center h1 {
+    color: white; }
 
 h2 {
   color: black;
+  margin: 0;
   margin-top: 0px;
-  margin-bottom: 0px;
   z-index: 100;
   font-size: 2.5em; }
 
@@ -92,6 +80,6 @@ h3 {
   margin: 0;
   margin-top: 0px;
   z-index: 100;
-  font-size: 1.5em; }
+  font-size: 1em; }
 
 /*# sourceMappingURL=main.css.map */

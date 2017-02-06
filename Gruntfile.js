@@ -127,13 +127,13 @@ module.exports = function (grunt) {
 		'scss'
 	]);
 
-	grunt.registerTask('serve', [
+	grunt.registerTask('default', [
 		'build',
 		'test',
 		'connect:server']);
 
 	grunt.registerTask('test', ['mochaTest']);	
-	grunt.registerTask('default', [
+	grunt.registerTask('dev', [
 		'build',
 		'test',
 		'watch'

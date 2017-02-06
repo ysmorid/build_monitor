@@ -1,0 +1,6 @@
+[
+{"pipeline" : "A1", "cctray" : "http://go.twu53team1.freewheelers.bike/go/cctray.xml"},
+{"pipeline" : "A2", "cctray" : "http://go.twu53team2.freewheelers.bike/go/cctray.xml"},
+{"pipeline" : "B3", "cctray" : "http://go.twu53team3.freewheelers.bike/go/cctray.xml"},
+{"pipeline" : "B4", "cctray" : "http://go.twu53team4.freewheelers.bike/go/cctray.xml"}
+]

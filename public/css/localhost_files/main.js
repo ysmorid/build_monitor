@@ -48,7 +48,7 @@ $(function() {
         } 
       },
     });
-    setTimeout(retrieveStatus, 2000);
+    setTimeout(retrieveStatus, 45000);
   }
 
   retrieveStatus();
