@@ -1,6 +1,7 @@
 To start the command to collect data from the Freewheelers cctray, open up a terminal and enter the following
 
-sh Documents/Freewheeler\ Projects/build_monitor/monitor.sh
+cd Documents/Freewheeler\ Projects/build_monitor/
+sh monitor.sh
 
 This will hang,
 
