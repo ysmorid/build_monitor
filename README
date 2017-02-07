@@ -1,5 +1,7 @@
-README
-start up a python simple server in a terminal
+install nodejs npm
+npm install
+npm install -g grunt-cli
+npm install grunt-connect
 
-python -m SimpleHTTPServer
-
+gem install chicanery
+gem install json

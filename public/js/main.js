@@ -9,7 +9,7 @@ $(function() {
 
     $(selector + " h1").text(build.name);
     $(selector + " h2").text(build.label ? build.label : "");
-    $(selector + " h3").text(build.time);
+    //$(selector + " h3").text(build.time);
 
     $(selector).children('div')[0].className = ('border ' + build.activity);
 
@@ -68,7 +68,7 @@ function create_stages(num_stages) {
       html += '<div class="base">';
       html += '<div class="center">';
       html += '<h1></h1>';
-      html += '<h3></h3>';
+      //html += '<h3></h3>';
       html += '</div>';
       html += '</div>';
       html += '</div>';

@@ -1,0 +1,22 @@
+To start the command to collect data from the Freewheelers cctray, open up a terminal and enter the following
+
+sh Documents/Freewheeler\ Projects/build_monitor/monitor.sh
+
+This will hang,
+
+To start the server connection, open up a second terminal then enter the following;
+
+cd Documents/Freewheeler\ Projects/build_montitor/
+grunt
+
+Then open up the web browser and go to
+
+localhost:1337/#A2
+
+For a connection to the raspberry pi from another machine, get the IP address;
+
+ifconfig
+
+And you should be able to find the ip address under the wired/lan section
+
+[ip_address]:1337/#A2

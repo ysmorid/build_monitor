@@ -36,6 +36,7 @@ body {
       display: table-cell;
       vertical-align: middle;
       width: 350px;
+      height: 150px;
       text-align: center;
       position: relative;
       box-shadow: 0 0 32px 2px black inset, 0 0 1px 1px rgba(255, 255, 255, 0.5); }
