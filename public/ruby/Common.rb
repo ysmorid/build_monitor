@@ -56,7 +56,6 @@ module Common
 
 			stages.each do |map|
 				map.each do |name, status|
-					puts map["activity"]
 		        	if status == "failed"
 		    			failureCount += 1;
 		    		end
