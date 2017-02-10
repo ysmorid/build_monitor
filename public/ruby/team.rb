@@ -3,6 +3,10 @@ require 'json'
 require_relative 'Common'
 include Common
 
+require_relative 'FileUtil'
+include FileUtil
+
+
 include Chicanery::Cctray
 
 unless ARGV.empty?

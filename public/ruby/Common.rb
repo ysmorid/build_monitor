@@ -4,6 +4,8 @@ module Common
 	RUBY_DIR = PATH + "/../ruby/"
 	RESOURCE_DIR = PATH + "/../resources/"
 
+	BEAN = "BEAN"
+
 	PIPELINEMAPS = {
 	  "Freewheelers" => {
 	    "Freewheelers_Web_App :: build" => "Build",
@@ -79,33 +81,4 @@ module Common
 		    }
 		end
 	end
-
-    def get_json path
-    	begin
-    		file = File.read(path)
-			JSON.parse(file) 
-		rescue => e
-			puts "*******************************"
-			puts "#{e}"
-			puts "*******************************"
-		end
-  	end
-
-  	def save_file path, data
-	    File.open(path, "w+") {
-	    	|f| f.puts data 
-	    }
-  	end
-
-  	def delete_file path
-  		begin
-
-  			File.delete(path) if File.exist?(path)
-		rescue => e
-			puts "*******************************"
-			puts "#{e}"
-			puts "*******************************"
-		end		
-	end	
-
 end

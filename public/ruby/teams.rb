@@ -2,6 +2,11 @@ require 'chicanery/cctray'
 require 'json'
 require_relative 'Common'
 include Common
+require_relative 'FileUtil'
+require_relative 'JsonInterpreter'
+include FileUtil
+include JsonInterpreter
+
 
 include Chicanery::Cctray
 
