@@ -7,7 +7,6 @@ require_relative 'JsonInterpreter'
 include FileUtil
 include JsonInterpreter
 
-
 include Chicanery::Cctray
 
 when_run do

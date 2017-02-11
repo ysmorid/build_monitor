@@ -57,8 +57,8 @@ module Common
 			buildingCount = 0;
 
 			stages.each do |map|
-				map.each do |name, status|
-		        	if status == "failed"
+				map.each do |name|
+		        	if map["status"] == "failure"
 		    			failureCount += 1;
 		    		end
 		        	if map["activity"] == "building"
@@ -68,7 +68,7 @@ module Common
 			end
 			project = {
 				"name" => pipeline_name,
-				"status" => (failureCount > 0 ? "failed" : "success"),
+				"status" => (failureCount > 0 ? "failure" : "success"),
 				"activity" => (buildingCount > 0 ? "building" : "sleeping"),
 				"url" => "#"+ pipeline_name
 		    }

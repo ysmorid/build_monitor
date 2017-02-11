@@ -21,10 +21,10 @@ body {
   font-size: 500%;
   margin: 0 auto; }
 
-.container {
+#stages {
   margin: 0em auto; }
 
-.light, .light.failed, .light.error {
+.light, .light.failure, .light.error {
   display: inline-block;
   margin: 10px; }
   .light .border, .light .border.building {
@@ -63,11 +63,11 @@ body {
   .light .building.border {
     background: -webkit-linear-gradient(top, #ffcc00, #bf6600 100%); }
 
-.failed.light .border .base {
+.failure.light .border .base {
   background: url(fire.gif) 100% 100%;
   background-repeat: repeat-x;
   background-size: 100%; }
-  .failed.light .border .base .center h1 {
+  .failure.light .border .base .center h1 {
     color: white; }
 
 .error.light .border {

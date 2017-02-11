@@ -24,16 +24,16 @@ $(function() {
 
     if (build.status == "success") {
       $(selector).addClass("passed");
-      $(selector).removeClass("failed");
+      $(selector).removeClass("failure");
       $(selector).removeClass("error");
-    } else if (build.status == "failed") {
-      $(selector).addClass("failed");
+    } else if (build.status == "failure") {
+      $(selector).addClass("failure");
       $(selector).removeClass("passed");
       $(selector).removeClass("error");
     } else {
       $(selector).addClass("error");
       $(selector).removeClass("passed");
-      $(selector).removeClass("failed")
+      $(selector).removeClass("failure")
     }
 
     $(selector).click(function () {

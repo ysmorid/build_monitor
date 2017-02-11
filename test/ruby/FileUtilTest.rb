@@ -4,8 +4,7 @@ require_relative "../../public/ruby/FileUtil"
 include FileUtil
 
 class FileUtilTest < Test::Unit::TestCase
-
-	def test_createFile_then_deleteFile
+	def test_create_then_delete_file
 		fileName = "File.txt"
 
 		save_file(fileName, "");

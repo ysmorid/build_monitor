@@ -1,6 +1,8 @@
 'use strict';
 
 var request = require('request');
+var process = require('child_process');
+
 
 module.exports = function (grunt) {
 	// show elapsed time at the end
@@ -18,6 +20,12 @@ module.exports = function (grunt) {
 				src: ['test/**/*.js']
 			}
 		},
+
+		shell: {
+			rubyTest: {
+				command: 'sh test/ruby/runRubyTests.sh'
+			}
+		},	
 
 		browserify: {
 			options: {
@@ -65,6 +73,12 @@ module.exports = function (grunt) {
 	    	options: {
 	    		nospawn: true,
 	    		livereload: reloadPort
+	    	},
+
+	    	ruby: {
+	    		files: ['public/ruby/*.rb', 
+	    				'test/ruby/*.rb'],
+	    		tasks: ['test', 'delayed-livereload']
 	    	},
 
 	    	js: {
@@ -116,12 +130,15 @@ module.exports = function (grunt) {
 		}, 500);
 	});
 
+	grunt.loadNpmTasks('grunt-shell');
 	grunt.loadNpmTasks('grunt-connect');
 	grunt.loadNpmTasks('grunt-browserify');
 	grunt.loadNpmTasks('grunt-mocha-test');
 
 	// Register Grunt tasks
 	grunt.registerTask('scss', ['sass']);
+	grunt.registerTask('rubyTest', ['shell:rubyTest']);
+
 	grunt.registerTask('build', [
 		'browserify',
 		'scss'
@@ -133,6 +150,7 @@ module.exports = function (grunt) {
 		'connect:server']);
 
 	grunt.registerTask('test', ['mochaTest']);	
+	
 	grunt.registerTask('dev', [
 		'build',
 		'test',
