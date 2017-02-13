@@ -10,6 +10,7 @@ module Common
 	  "Freewheelers" => {
 	    "Freewheelers_Web_App :: build" => "Build",
 	    "Freewheelers_Web_App :: integration" => "Integration",
+	    "Freewheelers_Web_App :: functional" => "Functional",
 	    "Freewheelers_Web_App :: package" => "Package",
 	    "Freewheelers_Web_App :: deploy-to-ci" => "CI",
 	    "Freewheelers_Web_App :: deploy-to-qa" => "QA",
